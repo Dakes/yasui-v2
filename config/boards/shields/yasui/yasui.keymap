@@ -49,6 +49,12 @@
 
     combos {
         compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <30>;
+            key-positions = <1 2>;  // w f
+            layers = <1 2>;
+            bindings = <&kp DE_AT>;
+        };
         combo_tab {
             timeout-ms = <30>;
             key-positions = <12 13>;
