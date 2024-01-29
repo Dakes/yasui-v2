@@ -51,9 +51,9 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <30>;
-            key-positions = <1 2>;  // w f
+            key-positions = <1 2>;  // wf
             layers = <1 2>;
-            bindings = <&kp DE_AT>;
+            bindings = <&kp ESC>;
         };
         combo_tab {
             timeout-ms = <30>;
@@ -69,15 +69,9 @@
         };
         combo_ue {
             timeout-ms = <40>;
-            key-positions = <18 19>;
+            key-positions = <7 8>;  // uy
             layers = <0>;
             bindings = <&kp DE_UE>;
-        };
-        combo_oe {
-            timeout-ms = <40>;
-            key-positions = <17 18>;
-            layers = <0>;
-            bindings = <&kp DE_OE>;
         };
         combo_ss {
             timeout-ms = <40>;
@@ -85,21 +79,27 @@
             layers = <0>;
             bindings = <&kp DE_SS>;
         };
-        combo_mins {
-            timeout-ms = <30>;
-            key-positions = <17 18>;
-            layers = <0 1 2>;
-            bindings = <&kp DE_MINUS>;
-        };
         combo_unds {
             timeout-ms = <30>;
-            key-positions = <16 17>;  // n e
+            key-positions = <16 17>;  // ne
             layers = <0 1 2>;
             bindings = <&kp DE_UNDER>;
         };
-        combo_at {
+        combo_mins {
             timeout-ms = <30>;
-            key-positions = <25 26>;  // h ,
+            key-positions = <17 18>;  // ei
+            layers = <0 1 2>;
+            bindings = <&kp DE_MINUS>;
+        };
+        combo_oe {
+            timeout-ms = <40>;
+            key-positions = <18 19>;  // io
+            layers = <0>;
+            bindings = <&kp DE_OE>;
+        };
+        combo_at {
+            timeout-ms = <40>;
+            key-positions = <26 27>;  // h,
             layers = <1 2>;
             bindings = <&kp DE_AT>;
         };
