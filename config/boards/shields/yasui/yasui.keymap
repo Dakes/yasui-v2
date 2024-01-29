@@ -90,8 +90,6 @@
     };
 };
 
-
-/ {
     behaviors {
         slt: sticky_layer_tap {
             compatible = "zmk,behavior-hold-tap";
