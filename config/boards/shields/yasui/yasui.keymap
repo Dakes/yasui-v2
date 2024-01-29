@@ -103,8 +103,6 @@
         };
     };
 
-
-/ {
 // TODO: fix bottom row, fix visual representation
        keymap {
               compatible = "zmk,keymap";
