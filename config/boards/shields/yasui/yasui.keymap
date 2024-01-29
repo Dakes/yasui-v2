@@ -35,6 +35,17 @@
 };
 
 / {
+    behaviors {
+        slt: sticky_layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "STICKY_LAYER_TAP";
+            tapping_term_ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&sk>;
+        };
+    };
+
     combos {
 // TODO: fix key posisions
         compatible = "zmk,combos";
@@ -85,19 +96,6 @@
             key-positions = <31 32>;
             layers = <1 2>;
             bindings = <&kp DE_AT>;
-        };
-
-    };
-};
-
-    behaviors {
-        slt: sticky_layer_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "STICKY_LAYER_TAP";
-            tapping_term_ms = <200>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&sk>;
         };
     };
 
@@ -165,4 +163,5 @@
 &kp K_VOL_DN  &kp K_MUTE  &kp K_VOL_UP  &none      &none        /**/ &none         &none   &kp K_PREV &kp K_PP  &kp K_NEXT
             >;
         };
+    };
 };
